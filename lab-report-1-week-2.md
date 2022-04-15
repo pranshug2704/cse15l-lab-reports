@@ -10,7 +10,7 @@ The second step is to connect to the remote computer.
 We do this by first opening the terminal (using Ctrl + \` or Terminal -> New Terminal).
 Then we use command:
 
-$ ssh *Username*@ieng6.ucsd.edu
+`$ ssh *Username*@ieng6.ucsd.edu`
 
 Type yes on the next prompt and then enter your password.
 You should now be connected to the remote computer.
@@ -28,7 +28,7 @@ Some of these commands are cd, ls, pwd, mkdir, and cp.
 ## Moving Files with scp
 To move a file, use the command:
 
-scp *Filename* *Username*@ieng6.ucsd.edu:~/
+`scp *Filename* *Username*@ieng6.ucsd.edu:~/`
 
 Now, upon logging back into ieng6, you should see this file in the home directory and be able to run it on the remote computer.
 
@@ -39,17 +39,17 @@ Now, upon logging back into ieng6, you should see this file in the home director
 Having to log back in each time is annoying, so we can set up an SSH key to log in for us.
 Use command:
 
-$ ssh-keygen
+`$ ssh-keygen`
 
 Do not enter a passphrase when prompted.
-Log back into the remote computer using $ ssh *Username*@ieng6.ucsd.edu and enter your password again.
+Log back into the remote computer using `$ ssh *Username*@ieng6.ucsd.edu` and enter your password again.
 Then use command:
 
-$ mkdir .ssh
+`$ mkdir .ssh`
 
 Logout of the remote computer and use command:
 
-$ scp /Users/\<user-name\>/.ssh/id_rsa.pub *Username*@ieng6.ucsd.edu:~/.ssh/authorized_keys
+`$ scp /Users/\<user-name\>/.ssh/id_rsa.pub *Username*@ieng6.ucsd.edu:~/.ssh/authorized_keys`
 
 Now you can log in without having to type in your password each time.
   
@@ -60,12 +60,12 @@ Now you can log in without having to type in your password each time.
 We can write commands in quotes at the end of the ssh command to log in, run, and then exit the remote computer all in one go.
 For example:
 
-$ ssh *Username*@ieng6.ucsd.edu "ls"
+`$ ssh *Username*@ieng6.ucsd.edu "ls"`
 
 We can use semicolons to run multiple commands on the same line.
 For example:
 
-$ cp WhereAmI.java OtherMain.java; javac OtherMain.java; java WhereAmI
+`$ cp WhereAmI.java OtherMain.java; javac OtherMain.java; java WhereAmI`
 
 We can use the up and down arrow keys to navigate between recently run commands.
 
