@@ -4,14 +4,14 @@
 The first bug we encountered was a heap error that was caused by an infinite loop. In order to fix this, we removed the unnecessary extra lines after the line with the link. This seemed to fix the error.
 
 ![Image](Github Test File 2 Fix.png)
-*Code Change for Heap Error*
+*Code Change for OutOfMemory Error*
 
 [Link to First Error Inducing Test File](https://github.com/pranshug2704/markdown-parser/commit/da86dc83c0de379327b219f96d9fdd3af5439bc0)
 
 The code ran with the heap error and took several moments to actually run due to the fact that the computer was processing an infinite loop.
 
 ![Image](Bugged Test File 2.png)
-*Symptom for Heap Error*
+*Symptom for OutOfMemory Error*
 
 ## Bug Number 2 - IndexOutOfBounds Error
 
