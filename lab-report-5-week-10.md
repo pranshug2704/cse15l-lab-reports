@@ -10,7 +10,7 @@
 
 I found this by using the bash script and putting the output onto a new text file. For test file 135, my MarkdownParser returned an array with one value while the other MarkdownParser did not. In test file 246, my MarkdownParser returned a different array from the other MarkdownParser. 
 
-> Note: The two images come from the files 159.md and 211.md. 
+> The two images come from the files 159.md and 211.md. 
 > Test 159.md can be found [here](https://github.com/brandoluu/markdown-parser/blob/main/test-files/159.md) 
 > Test 211.md can be found [here](https://github.com/brandoluu/markdown-parser/blob/main/test-files/211.md).
 
